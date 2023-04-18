@@ -95,9 +95,14 @@ TINKER_EXTERN grad_prec* gx_elec; ///< Gradient of electrostatic terms.
 TINKER_EXTERN grad_prec* gy_elec; ///< Gradient of electrostatic terms.
 TINKER_EXTERN grad_prec* gz_elec; ///< Gradient of electrostatic terms.
 
+TINKER_EXTERN grad_prec* gx_solv; ///< Gradient of VDW, repulsion, dispersion, etc. terms.
+TINKER_EXTERN grad_prec* gy_solv; ///< Gradient of VDW, repulsion, dispersion, etc. terms.
+TINKER_EXTERN grad_prec* gz_solv; ///< Gradient of VDW, repulsion, dispersion, etc. terms.
+
 TINKER_EXTERN EnergyBuffer eng_buf;      ///< Energy buffer for the valence terms.
 TINKER_EXTERN EnergyBuffer eng_buf_vdw;  ///< Energy buffer for the vdw terms.
 TINKER_EXTERN EnergyBuffer eng_buf_elec; ///< Energy buffer for the electrostatic terms.
+TINKER_EXTERN EnergyBuffer eng_buf_solv; ///< Energy buffer for the solvation terms.
 
 TINKER_EXTERN VirialBuffer vir_buf;      ///< Virial buffer for the valence terms.
 TINKER_EXTERN VirialBuffer vir_buf_vdw;  ///< Virial buffer for the vdw terms.
@@ -107,6 +112,7 @@ TINKER_EXTERN energy_prec esum;           ///< Total potential energy.
 TINKER_EXTERN energy_prec energy_valence; ///< Total valence energy.
 TINKER_EXTERN energy_prec energy_vdw;     ///< Total vdw energy.
 TINKER_EXTERN energy_prec energy_elec;    ///< Total electrostatic energy.
+TINKER_EXTERN energy_prec energy_solv;    ///< Total electrostatic energy.
 
 TINKER_EXTERN virial_prec vir[9];            ///< Total potential virial tensor.
 TINKER_EXTERN virial_prec virial_valence[9]; ///< Total valence virial tensor.
